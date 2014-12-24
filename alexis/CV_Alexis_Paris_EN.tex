@@ -1,0 +1,181 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% necessaire pour les fleches \RIGHTarrow
+\usepackage{wasysym}
+
+\hyphenation{progiciels}
+
+% moderncv themes
+\moderncvtheme[blackdog]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+
+% adjust the page margins
+\usepackage[left=1cm,top=0.5cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}
+%\usepackage[scale=0.90]{geometry}
+
+
+%\layout
+
+\recomputelengths                             % required whens changes are made to page layout lengths
+
+% personal data
+\firstname{Alexis}
+\familyname{Paris}
+\title{Software Architect \& Developer}               % optional, remove the line if not wanted
+%\general{27 ans, c\'elibataire, nationalit\'e fran\c caise}
+\address{78 rue sainte H\'el\`ene}{F-57700 Hayange}    % optional, remove the line if not wanted
+%\mobile{(+33)6 60 48 24 26 (apr\`es 18h)}                    % optional, remove the line if not wanted
+%\phone{(+33)3 55 84 17 94 (apr\`es 20h)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[87pt]{new_picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\email{alexis.paris@blackdog-project.org}                      % optional, remove the line if not wanted
+\extrainfo{33 years old, french, civil union, 2 children.}
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Professional experiences}
+% cventry arguments 3 to 6 are optional
+
+%
+% CTG
+% 
+\subsection{Cetrel Securities}
+
+% cetrel securities
+\cventry{Since sept. 2013}{Team leader}{}{}{}{
+- Development of a GWT application managing the validation of reference prices for financial assets based on the data of several providers (SIX Telekurs, Reuters, Bloomberg).\newline{}
+- Export of SIX Telekurs's data.\newline{}
+- Development of a GWT application managing access rights for several Cetrel Securities's products.\newline{}
+- Development of generic tools for import/export of data.\newline{}
+- As technical officer, monitoring technological developments and setting up a software industrialisation platform.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{Apache Tomcat 6, GWT 2, Spring, Spring-security, Spring-web-service}, SOAP Web services, jOOQ, HTML, CSS, \textbf{\weblink[\underline{Twitter Bootstrap}]{http://getbootstrap.com/2.3.2/}}, secured Web services (SSL), Args4J, Oracle 11, PL/SQL, JUnit, dbUnit, Mockito, Subversion.}}}}
+
+\subsection{CTG Luxembourg PSF}
+
+% direch
+\cventry{April 2013 - Aug. 2013}{Team leader (5 months)}{}{Administrations des contributions directes au Luxembourg}{Direch}{Development of a web application used by companies to make their tax declarations.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{Websphere 7. et RAD7.5, SOAP Web services, Struts 2}, JPA, HTML, CSS, \textbf{\weblink[\underline{Twitter Bootstrap}]{http://getbootstrap.com/2.3.2/}}, Javascript, JQuery, IBM DB2, Git.}}}}
+
+% tribunal administratif
+\cventry{Juny 2012 - Sept. 2012}{Software architect (4 months)}{}{CTIE}{}{Architecture of a generic web solution used as standards for future CTIE's projects :\newline{}
+- Functional tests based on Arquilian\newline{}
+- Generic validation layer based on JSR303 (Hibernate validator)\newline{}
+- API simplifying the creation of dynamic JPQL queries\newline{}
+- API for Office (docx et xlsx) documents generation\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{Struts 2, \weblink[\underline{Arquillian}]{http://www.jboss.org/arquillian.html}}, JUnit, \textbf{DBUnit}, JPA, Apache POI, \textbf{Hudson, Sonar}, Maven 2, Git.}}}}
+
+% IDC Timer
+\cventry{May 2012}{Software engineer (1 week)}{}{internal project}{IDC Timer}{Analyse, development, tests and deployment of a solution registering the duration of calls of helpdesk agents.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{HTML5, CSS3}, Javascript, \textbf{\weblink[\underline{Node.js}]{http://nodejs.org/}, \weblink[\underline{MongoDB}]{http://www.mongodb.org/}, architecture REST}, JQuery, JQuery UI, \weblink[Mustache]{http://mustache.github.com/}, Git.}}}}
+
+% Connect to grow
+\cventry{April 2012}{Software engineer (4 weeks)}{}{internal project}{\weblink[\underline{Connect to grow}]{http://www.connecttogrow.eu/}}{During the recruitment campaign of CTG, development of a web site collecting data from differents social networks \textbf{Twitter, Facebook et LinkedIn}.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{JQuery mobile, JSONP}, HTML, CSS, Javascript, JQuery, Git.}}}}
+
+% Psymap
+\cventry{Oct. 2011 - Juny. 2012}{Software engineer (9 months)}{}{internal project}{Psymap}{Development of a web application managing the customer relationship based on the \weblink[MBTI's methodology]{http://fr.wikipedia.org/wiki/Myers_Briggs_Type_Indicator}.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{\texttt{C\#}, .Net, MVC}, Razor, IIS, Enterprise Library, Visual studio, HTML, CSS, Javascript, JQuery, \textbf{\weblink[\underline{Foundation}]{http://foundation.zurb.com/}}, SQL Server, Team Foundation Server.}}}}
+
+% AEIMM
+\cventry{Oct. 2011 - Feb. 2012}{Software engineer (5 months)}{}{Ministry of foreign affairs in Luxembourg}{Aeimm}{Application managing resident's permits.\newline{}
+Maintenance of the application and development of new functionalities.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{Websphere 7. et RAD7.5, SOAP Web services, Struts 2}, JPA, HTML, CSS, Javascript, JQuery, IBM DB2, SVN.}}}}
+
+% JUCHA
+\cventry{Sept. 2008 - sept. 2011}{Software engineer (3 years)}{}{Ministry of justice in Luxembourg}{Jucha}{Development of an application managing lawsuits and police records. Interconnection with the european police records network.\newline{}
+- Technical analysis\newline{}
+- Client development (SWT, Jgoodies, architecture HMVC).\newline{}
+- Development of a document generation system based on RTF.\newline{}
+- Unit tests, Packaging and deployment\newline{}
+- Environment : 3 analysts, 9 developpers et 3 testers.\newline{}
+- Maintenance of the application, debugging and migration from RAD7.0 to RAD7.5 and from EJB2 to EJB3. Use of JPA for the persistence layer.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{EJB 3.0, JPA (OpenJPA), Java 6.0 et java web start, Websphere 6.0 et 7.0, RAD7.5}, JAX-WS, JUnit, Eclipse 3.4, OSGi, SWT, Freemarker, TDD, Scrum, IBM DB2, Maven 2, SVN, iText (PDF generation)}}}}% arguments 3 to 6 are optional
+
+%
+% Infass systemes
+%
+\subsection{Infass Syst\`emes}
+
+\cventry{Nov. 2004 - sept. 2008}{Software engineer (4 years)}{}{Montgeron (Essone)}{}{Develoment of a J2EE platform and several sofware packages.\newline{}Development of software packages for customers in the domain of insurance (Siaci), transport (Les Nouveaux Coursiers) et temporary work (Bref Services).\newline{}System developments (user interface, persistance, administration tools) and business developments (reporting).\newline{}Development of a scheduled tasks system.\newline{}Maintenance and follow-up of customers demands and problems.\newline{}
+\textcolor{technologycolor}{\textit{\small{\textbf{J2EE (EJB 2), JOnAS, DB2}, Swing, JUnit, Java web start, Xslt, Apache Fop, Apache Ant, CVS.}}}}
+
+%\subsection{Stages}
+
+%\cventry{2004}{D\'eveloppeur (4 mois et demi)}{\textbf{Atos Origin}}{Lab\`ege (Haute-garonne)}{}{Analyse et d\'eveloppement d'un logiciel de m\'eta-mod\'elisation bas\'e sur \weblink[\underline{AToM3}]{http://atom3.cs.mcgill.ca} pour le compte d'Airbus.\newline{}\textit{\small{Python, Gtk, Pos\'eidon, Cygwin.}}}
+%\cventry{2003}{D\'eveloppeur (3 mois)}{\textbf{Turbomeca}}{Bordes (64510)}{}{R\'ealisation d'une proc\'edure de fusion des donn\'ees t\'el\'ephoniques dans le cadre du raccordement du r\'eseau Turbomeca \`a celui de la Snecma.%\newline{} \textbullet{) \textasteriskcentered{} \textit{VBA, MS Access, MS Excel, Sql, PABX.}}
+
+
+\section{Technologies}
+\cvcomputer{Languages}{\textbf{Java / J2EE(EJB 3)}, Groovy, Scala, Javascript, Html, Css, \texttt{C\#}, SQL, PL/SQL, Bash, XML, Python, Ada, Latex}.
+\cvcomputer{IDE \& Tools}{\textbf{Eclipse}, \textbf{IntelliJ IDEA}, Netbeans, IBM RAD 7.5, Visual Studio, \textbf{Maven 2}, Ant, \textbf{JProfiler}}.
+\cvcomputer{Databases}{\textbf{Oracle database 11}, \textbf{PostgreSQL}, \textbf{IBM DB2v9}, SQL Server, MongoDB, Derby, MySQL}.
+\cvcomputer{Softwares}{Glassfish, IBM Websphere 6.0 et 7.0, JOnAS, \textbf{Jenkins (Hudson)}, \textbf{Sonar}, Tomcat, ArgoUML, Gimp}.
+\cvcomputer{Framework, API}{\textbf{GWT 2.5.1}, \textbf{Grails}, \textbf{Play!}, \textbf{Node.js}, JPA, \textbf{Spring}, \textbf{Spring security}, \textbf{Spring Web Service}, JUnit, Mockito, dbUnit, OSGi, \textbf{Google Guava}, \textbf{jOOQ}, \textbf{Bean Validation JSR303}, \textbf{Args4J}, \textbf{\weblink[\underline{Twitter Bootstrap}]{http://getbootstrap.com/2.3.2/}}, \textbf{\weblink[\underline{Foundation}]{http://foundation.zurb.com/}}}.
+\cvcomputer{Versioning}{\textbf{Git}, \textbf{Subversion}, CVS, TFS}.
+\cvcomputer{Environments}{\textbf{Unix / Linux (Ubuntu 8.10, Fedora 6, FreeBSD, Red hat enterprise, Mandrake)}, Mac OS X, Windows (XP, Vista, 7)}.
+
+
+\section{Languages}
+\cvlanguage{French}{mother tongue.}{}
+\cvlanguage{English}{read, written, spoken (TOEIC~: 805 in 2003), \small{\textit{30 hours of english talks in 2010}}.}{}
+\cvlanguage{German}{Beginner.}{}
+
+\section{Education}
+\cventry{2001--2004}{Master's degree in Computer sciences, Telecommunications and network.}{\textbf{INSA}}{Toulouse}{}{}  % arguments 3 to 6 are optional
+\cventry{1999--2001}{Two-year highly selective classes to prepare for the competitive exams to the "Grandes Ecoles"}{Lyc\'ees Cl\'emenceau/Roosevelt}{Reims}{}{}
+%\cventry{1999}{French high-school diploma in sciences}{Lyc\'ee Monge}{Charleville-M\'ezi\`eres}{}{}
+
+
+\section{Training}
+\cventry{2013}{\textbf{3 days of training "Develop with PL/SQL"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
+\cventry{2011}{\textbf{2 days of training "Introduction to bank and investment founds"}}{organized by Get Training}{}{}{}  % arguments 3 to 6 are optional
+\cventry{2011}{\textbf{3 days of training "Dojo Toolkit, Ajax/ RIA applications in JavaScript"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
+\cventry{2009 et 2010}{\textbf{Devoxx}}{3 days of conference}{\weblink[\underline{www.devoxx.com}]{http://www.devoxx.com}}{}{}  % arguments 3 to 6 are optional
+%\cventry{2009}{\textbf{Devoxx}}{participation aux 3 jours de conf\'erence}{}{}{}  % arguments 3 to 6 are optional
+\cventry{Since 2010}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
+
+
+\section{Personal projects}
+\cvline{Link Guardian \tiny \textcolor{projectyearcolor}{(2013)}}{\weblink[\underline{http://linkguardian-blackdog.rhcloud.com}]{http://linkguardian-blackdog.rhcloud.com} : web application allowing to \textbf{manage online url bookmarking} and share links on twitter}.
+    Deployed  on Red Hat's \weblink[\underline{Openshift}]{http://openshift.redhat.com}.\newline{}
+	\textcolor{technologycolor}{\textit{\small{Cloud, Grails, Groovy, Spring, Spring security, Twitter Bootstrap, Google URL Shortener service, JQuery, CSS3, Git}}.}
+\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :
+    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
+	\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
+\cvline{Personal website}{\textbf{}
+	\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
+	\textcolor{technologycolor}{\textit{\small{HTML5, Javascript, CSS3, JQuery, Knockout}}}}.
+\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{\weblink[\underline{http://www.blackdog-project.org/blackdog/}]{http://www.blackdog-project.org/blackdog/} :
+    Open source lightweight iTunes-like software.\newline{}
+	\textcolor{technologycolor}{\textit{\small{Java 6, Hibernate, Swing, SwingX, JUnit, Subversion, Log4j, Maven 2, SVN}}.}}
+    %\htmladdnormallink{http://www.blackdog-project.org/fr}{http://www.blackdog-project.org/fr}).}
+\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{\weblink[\underline{awl-wizard.sourceforge.net}]{http://awl-wizard.sourceforge.net/fr} :
+    Open source Java API for the creation of graphical wizards in Swing}.
+
+\section{Hobbies}
+\cvline{}{Sport (badminton, jogging), music.}
+
+
+\end{document}
