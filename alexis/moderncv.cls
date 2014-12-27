@@ -210,6 +210,8 @@
 \definecolor{sectiontitlecolor}{rgb}{0,0,0}
 \definecolor{subsectioncolor}{rgb}{0,0,0}
 \definecolor{hintcolor}{rgb}{0,0,0}
+\definecolor{projectyearcolor}{gray}{0.6}
+\definecolor{technologycolor}{gray}{0.5}
 
 % fonts
 \providecommand*{\firstnamefont}{}
@@ -335,7 +337,7 @@
 % usage (inside section): \subsection{title}
 \newcommand*{\subsection}[1]{%
 % XIXI : espace avant sous-section
-  \cvline[0.65em]{}{\subsectionstyle{#1}}}
+  \cvline[0.25em]{}{\subsectionstyle{#1}}}
 
 % usage (inside section): \cvline{leftmark}{text}
 \newcommand*{\cvline}[3][.25em]{%
