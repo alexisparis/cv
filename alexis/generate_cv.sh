@@ -1,0 +1,25 @@
+#!/bin/bash
+rm -Rf ./tmp/*
+#rm -f ./output/CV_Alexis_Paris.pdf
+
+generate () {
+	java -jar ../cvelocity-1.0-SNAPSHOT-all.jar \
+	-template=CV_Alexis_Paris_velocity.tex \
+	-output=./tmp/$1.tex \
+	-params=$2
+
+	latex ./tmp/$1.tex
+	mv $1.dvi ./tmp
+	# > tmp/$1.latex.log
+	dvipdf ./tmp/$1.dvi ./output/$1.pdf
+	# > ./tmp/$1.dvipdf.log
+	#open ./output/$1.pdf	
+}
+
+generate "CV_Alexis_Paris_FR" "{french:true,english:false,photo:true,anonymous:false}"
+generate "CV_AP_FR"           "{french:true,english:false,photo:true,anonymous:true}"
+generate "CV_Alexis_Paris_EN" "{french:false,english:true,photo:true,anonymous:false}"
+generate "CV_AP_EN"           "{french:false,english:true,photo:true,anonymous:true}"
+
+rm *.aux
+rm *.out
