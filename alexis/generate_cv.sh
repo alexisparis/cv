@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -Rf ./tmp/*
-#rm -f ./output/CV_Alexis_Paris.pdf
+rm -f ./output/*
 
 generate () {
 	java -jar ../cvelocity-1.0-SNAPSHOT-all.jar \
@@ -8,7 +8,7 @@ generate () {
 	-output=./tmp/$1.tex \
 	-params=$2
 
-	latex ./tmp/$1.tex
+	latex ./tmp/$1.tex -halt-on-error
 	mv $1.dvi ./tmp
 	# > tmp/$1.latex.log
 	dvipdf ./tmp/$1.dvi ./output/$1.pdf
@@ -16,10 +16,16 @@ generate () {
 	#open ./output/$1.pdf	
 }
 
-generate "CV_Alexis_Paris_FR" "{french:true,english:false,photo:true,anonymous:false}"
-generate "CV_AP_FR"           "{french:true,english:false,photo:true,anonymous:true}"
-generate "CV_Alexis_Paris_EN" "{french:false,english:true,photo:true,anonymous:false}"
-generate "CV_AP_EN"           "{french:false,english:true,photo:true,anonymous:true}"
+# debug and all to check content concordance
+generate "CV_Alexis_Paris_debug" "{french:true,english:true,photo:false,anonymous:false,debug:true}"
+
+#classic ones
+generate "CV_Alexis_Paris_FR" "{french:true,english:false,photo:true,anonymous:false,debug:false}"
+generate "CV_AP_FR"           "{french:true,english:false,photo:false,anonymous:true,debug:false}"
+generate "CV_Alexis_Paris_EN" "{french:false,english:true,photo:true,anonymous:false,debug:false}"
+generate "CV_AP_EN"           "{french:false,english:true,photo:false,anonymous:true,debug:false}"
 
 rm *.aux
 rm *.out
+rm *.log
+rm velocity.log*
