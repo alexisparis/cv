@@ -54,7 +54,8 @@
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 #if ($photo == true)
-	\photo[87pt]{new_picture2}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+	% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+	\photo[87pt]{alexis_paris}    
 #end
 
 #if ($anonymous == false)
@@ -96,16 +97,30 @@
 	==============================================
 #end
 \weblink[\underline{Neopixl}]{http://neopixl.com}}
+
+% tarkett
+#if ($french == true)
+	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
+	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
+#end
+% if french and english (debug mode) then close cventry without technologies
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
+	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Apiary, REST, Git, Sourcetree.}}}}{}}
+
 % tango
 #if ($french == true)
 	\cventry{Depuis sept. 2015}{Backend \& Frontend developer}{}{}{}
-	{D\'eveloppement d'une solution de monitoring pour l'API REST de Tango.\newline{}
+	{D\'eveloppement d'une solution de monitoring pour l'API REST de \weblink[\underline{Tango}]{http://www.tango.lu/}.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{Since sept. 2015}{Backend \& Frontend developer}{}{}{}
-	{Development of a monitoring solution for Tango REST API.\newline{}
+	{Development of a monitoring solution for \weblink[\underline{Tango}]{http://www.tango.lu/} REST API.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, JHipster, Spring-boot, ChartJS, REST, Git, Sourcetree.}}}}{}}
 
@@ -115,12 +130,12 @@
 #end
 #if ($french == true)
 	\cventry{}{Frontend developer}{}{}{}
-	{D\'eveloppement d'une application web pour CMG en interaction avec une base de donn\'es PARSE.\newline{}
+	{D\'eveloppement d'une application web pour \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} en interaction avec une base de donn\'es PARSE.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{}{Frontend developer}{}{}{}
-	{Development of a web application for CMG interacting with Parse database.\newline{}
+	{Development of a web application for \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} interacting with Parse database.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Meteor, Parse, REST, Bootstrap, Git, confluence.}}}}}
 
