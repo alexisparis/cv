@@ -32,8 +32,8 @@
 
 % personal data
 #if ($anonymous == true)
-	\firstname{A.}
-	\familyname{P.}
+	\firstname{}
+	\familyname{}
 #else
 	\firstname{Alexis}
 	\familyname{Paris}
@@ -61,12 +61,14 @@
 #if ($anonymous == false)
 	\email{alexis.paris@blackdog-project.org}                      % optional, remove the line if not wanted
 
-	#if ($french == true)
-		\extrainfo{35 ans, fran\c cais, pacs\'e, 2 enfants.}
-	#end
-	#if ($english == true)
-		\extrainfo{35 years old, french, civil union, 2 children.}
-	#end
+	#if ($age == true)
+		#if ($french == true)
+			\extrainfo{35 ans, fran\c cais, pacs\'e, 2 enfants.}
+		#end
+		#if ($english == true)
+			\extrainfo{35 years old, french, civil union, 2 children.}
+		#end
+	#end	
 #end
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
@@ -97,19 +99,28 @@
 	==============================================
 #end
 \weblink[\underline{Neopixl}]{http://neopixl.com}}
+#if ($french == true)
+	\textit{groupe \weblink[\underline{Smile}]{http://www.smile.fr}}
+#end
+#if ($english == true)
+	\textit{a \weblink[\underline{Smile}]{http://www.smile.fr} group company}
+#end
+
 
 % tarkett
 #if ($french == true)
 	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
 	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
+	D\'eveloppement du backend\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
 	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
+	Development of the backend\newline{}
 #end
-\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Apiary, REST, Git, Sourcetree.}}}}{}}
+\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Apiary, REST, Git, Sourcetree.}}}}{}}
 
 % tango
 #if ($french == true)

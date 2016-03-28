@@ -17,13 +17,15 @@ generate () {
 }
 
 # debug and all to check content concordance
-generate "CV_Alexis_Paris_debug" "{french:true,english:true,photo:false,anonymous:false,debug:true}"
+generate "CV_Alexis_Paris_debug" "{french:true,english:true,photo:false,anonymous:false,age:true,debug:true}"
 
 #classic ones
-generate "CV_Alexis_Paris_FR" "{french:true,english:false,photo:true,anonymous:false,debug:false}"
-generate "CV_AP_FR"           "{french:true,english:false,photo:false,anonymous:true,debug:false}"
-generate "CV_Alexis_Paris_EN" "{french:false,english:true,photo:true,anonymous:false,debug:false}"
-generate "CV_AP_EN"           "{french:false,english:true,photo:false,anonymous:true,debug:false}"
+generate "CV_Alexis_Paris_FR"    "{french:true,english:false,photo:true,anonymous:false,age:true,debug:false}"
+generate "CV_AP_FR"              "{french:true,english:false,photo:false,anonymous:true,age:true,debug:false}"
+generate "CV_Alexis_Paris_EN"    "{french:false,english:true,photo:true,anonymous:false,age:true,debug:false}"
+generate "CV_AP_EN"              "{french:false,english:true,photo:false,anonymous:true,age:true,debug:false}"
+generate "CV_Alexis_Paris_CA_EN" "{french:false,english:true,photo:false,anonymous:false,age:false,debug:false}"
+generate "CV_Alexis_Paris_CA_FR" "{french:true,english:false,photo:false,anonymous:false,age:false,debug:false}"
 
 rm *.aux
 rm *.out
