@@ -39,10 +39,20 @@
 	\familyname{Paris}
 #end
 #if ( $french == true )
-	\title{D\'eveloppeur logiciel}
+	#if ( $qc == false )
+		\title{D\'eveloppeur logiciel}
+	#end
+	#if ( $qc == true )
+		\title{Ing\'enieur junior}
+	#end
 #end
 #if ( $english == true )
-	\title{Software developer}
+	#if ( $qc == false )
+		\title{Software developer}
+	#end
+	#if ( $qc == true )
+		\title{Junior engineer}
+	#end
 #end
 %\general{27 ans, c\'elibataire, nationalit\'e fran\c caise}
 
@@ -112,6 +122,7 @@
 	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
 	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
 	D\'eveloppement du backend\newline{}
+	D\'eveloppement de l'application Android associ\'ee\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
@@ -119,8 +130,9 @@
 	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
 	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
 	Development of the backend\newline{}
+	Development of the Android application\newline{}
 #end
-\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Apiary, REST, Git, Sourcetree.}}}}{}}
+\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Android, Apiary, REST, Git, Sourcetree.}}}}{}}
 
 % tango
 #if ($french == true)
