@@ -59,8 +59,10 @@
 #if ($anonymous == false)
 	\address{78 rue sainte H\'el\`ene}{F-57700 Hayange}    % optional, remove the line if not wanted
 #end
-%\mobile{(+33)6 60 48 24 26 (apr\`es 18h)}                    % optional, remove the line if not wanted
-%\phone{(+33)3 55 84 17 94 (apr\`es 20h)}                      % optional, remove the line if not wanted
+%\phone{(+33)6 60 48 24 26 (apr\`es 18h)}                    % optional, remove the line if not wanted
+#if ( $qc == true )
+	\mobile{(+33)6 60 48 24 26}                      % optional, remove the line if not wanted
+#end
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 #if ($photo == true)
@@ -91,7 +93,11 @@
 \begin{document}
 \maketitle
 
-                    % optional, remove the line if not wanted
+#if ( $qc == true )
+	#if ( $french == true )
+	Avec 12 ann\'ees d'exp\'eriences diverses dans le d\'eveloppement, je souhaite continuer dans cette voie tout en continuant a d\'evelopper mes competences\newline{} 
+	#end
+#end
 
 #if ($french == true)
 	\section{Exp\'eriences professionnelles}
@@ -121,18 +127,32 @@
 #if ($french == true)
 	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
 	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
-	D\'eveloppement du backend\newline{}
-	D\'eveloppement de l'application Android associ\'ee\newline{}
+	D\'eveloppement du backend. D\'eveloppement de l'application Android associ\'ee.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
 	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
-	Development of the backend\newline{}
-	Development of the Android application\newline{}
+	Development of the backend. Development of the Android application.\newline{}
 #end
-\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Android, Apiary, REST, Git, Sourcetree.}}}}{}}
+\textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Android, Apiary, REST, Git, Sourcetree, Android studio.}}}}{}}
+
+
+% parse.com
+#if ($french == true)
+	\cventry{Avril 2016}{Developer}{}{}{}
+	{Mise en place d'une proc\'edure de migration d'une application \weblink[\underline{Parse}]{http://www.parse.com/} vers un serveur parse d\'edi\'e.\newline{}
+	D\'eveloppement d'un module node pour migrer les fichiers.\newline{}
+#end
+% if french and english (debug mode) then close cventry without technologies
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{Apr. 2016}{Developer}{}{}{}
+	{Documentation of a procedure to migrate a \weblink[\underline{Parse}]{http://www.parse.com/} application to a self hosted parse server.\newline{}
+	Development of a node module to migrate files.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{Parse server, MongoDB, node.js.}}}}{}}
 
 % tango
 #if ($french == true)
@@ -153,12 +173,12 @@
 #end
 #if ($french == true)
 	\cventry{}{Frontend developer}{}{}{}
-	{D\'eveloppement d'une application web pour \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} en interaction avec une base de donn\'es PARSE.\newline{}
+	{D\'eveloppement d'une application web pour \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} en interaction avec une application \weblink[\underline{Parse}]{http://www.parse.com/}.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{}{Frontend developer}{}{}{}
-	{Development of a web application for \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} interacting with Parse database.\newline{}
+	{Development of a web application for \weblink[\underline{CMG}]{http://www.cmgsportsclub.com/} interacting with a \weblink[\underline{Parse}]{http://www.parse.com/} application.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Meteor, Parse, REST, Bootstrap, Git, confluence.}}}}}
 
@@ -407,9 +427,9 @@
 	\section{Formation}
 	\cventry{2014}{\textbf{Scrum master}}{ScrumAlliance}{\weblink[\underline{Certificat}]{http://github.com/alexisparis/cv/raw/master/alexis/certifications/Alexis_Paris-ScrumAlliance_CSM_Certificate_page.pdf}}{}{}  % arguments 3 to 6 are optional
 	\cventry{2013}{\textbf{Functional Programming Principles in Scala}}{ sur Coursera.org}{\weblink[\underline{Certificat}]{http://github.com/alexisparis/cv/raw/master/alexis/certifications/coursera-scala.pdf}}{}{}  % arguments 3 to 6 are optional
-	\cventry{2013}{\textbf{Formation de 3 jours "D\'evelopper en PL/SQL"}}{organis\'ee par Orsys}{}{}{}  % arguments 3 to 6 are optional
-	\cventry{2011}{\textbf{Formation de 2 jours "Introduction \`a la banque et aux fonds d'investissements"}}{organis\'ee par Get Training}{}{}{}  % arguments 3 to 6 are optional
-	\cventry{2011}{\textbf{Formation de 3 jours "Dojo Toolkit, applications Ajax/ RIA en JavaScript"}}{organis\'ee par Orsys}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2013}{\textbf{3 jours "D\'evelopper en PL/SQL"}}{organis\'ee par Orsys}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2011}{\textbf{2 jours "Introduction \`a la banque et aux fonds d'investissements"}}{organis\'ee par Get Training}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2011}{\textbf{3 jours "Dojo Toolkit, applications Ajax/RIA en JavaScript"}}{organis\'ee par Orsys}{}{}{}  % arguments 3 to 6 are optional
 	\cventry{2009 et 2010}{\textbf{Devoxx}}{participation aux 3 journ\'ees de conf\'erences}{\weblink[\underline{www.devoxx.com}]{http://www.devoxx.com}}{}{}  % arguments 3 to 6 are optional
 	%\cventry{2009}{\textbf{Devoxx}}{participation aux 3 jours de conf\'erence}{}{}{}  % arguments 3 to 6 are optional
 	\cventry{Depuis 2010}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
@@ -418,9 +438,9 @@
 	\section{Training}
 	\cventry{2014}{\textbf{Scrum master}}{ScrumAlliance}{\weblink[\underline{Certificate}]{http://github.com/alexisparis/cv/raw/master/alexis/certifications/Alexis_Paris-ScrumAlliance_CSM_Certificate_page.pdf}}{}{}  % arguments 3 to 6 are optional
 	\cventry{2013}{\textbf{Functional Programming Principles in Scala}}{ sur Coursera.org}{\weblink[\underline{Certificate}]{http://github.com/alexisparis/cv/raw/master/alexis/certifications/coursera-scala.pdf}}{}{}  % arguments 3 to 6 are optional
-	\cventry{2013}{\textbf{3 days of training "Develop with PL/SQL"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
-	\cventry{2011}{\textbf{2 days of training "Introduction to bank and investment founds"}}{organized by Get Training}{}{}{}  % arguments 3 to 6 are optional
-	\cventry{2011}{\textbf{3 days of training "Dojo Toolkit, Ajax/ RIA applications in JavaScript"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2013}{\textbf{3 days "Develop with PL/SQL"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2011}{\textbf{2 days "Introduction to bank and investment founds"}}{organized by Get Training}{}{}{}  % arguments 3 to 6 are optional
+	\cventry{2011}{\textbf{3 days "Dojo Toolkit, Ajax/RIA applications in JavaScript"}}{organized by Orsys}{}{}{}  % arguments 3 to 6 are optional
 	\cventry{2009 \& 2010}{\textbf{Devoxx}}{3 days of conference}{\weblink[\underline{www.devoxx.com}]{http://www.devoxx.com}}{}{}  % arguments 3 to 6 are optional
 	%\cventry{2009}{\textbf{Devoxx}}{participation aux 3 jours de conf\'erence}{}{}{}  % arguments 3 to 6 are optional
 	\cventry{Since 2010}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
@@ -428,11 +448,10 @@
 
 #if ($french == true)
 	\section{R\'ealisations personnelles}
-	\cvline{Link Guardian \tiny \textcolor{projectyearcolor}{(2013)}}{\textit{Modification en cours pour le d\'eployer sur le cloud Amazon.} Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}.
-	    D\'eploy\'e sur le cloud de Red Hat \weblink[\underline{Openshift}]{http://openshift.redhat.com}.\newline{}
-		\textcolor{technologycolor}{\textit{\small{Cloud, Grails, Groovy, Spring, Spring security, Twitter Bootstrap, Google URL Shortener service, JQuery, CSS3, Git}}.}}
+	\cvline{\weblink[\underline{Linkguardian}]{http://linkguardian.io} \tiny \textcolor{projectyearcolor}{(2016)}}{En cours. Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. Accessible sur \weblink[\underline{linkguardian.io}]{http://linkguardian.io}\newline{}
+		\textcolor{technologycolor}{\textit{\small{Jhipster, material design, Bootstrap, Spring, Google URL Shortener service, CSS3, PostgreSQL, Git, VPS}}.}}
 	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
-	    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar.\newline{}
+	    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar. \newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5, CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
 	#if ($anonymous == false)\cvline{Personal website}{\textbf{}
 		\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
@@ -446,9 +465,8 @@
 #end
 #if ($english == true)
 	\section{Personal projects}
-	\cvline{Link Guardian \tiny \textcolor{projectyearcolor}{(2013)}}{\textit{Rework in progress to deploy it on Amazon Cloud.} Web application allowing to \textbf{manage online url bookmarking} and share links on twitter}.
-	    Deployed  on Red Hat's \weblink[\underline{Openshift}]{http://openshift.redhat.com}.\newline{}
-		\textcolor{technologycolor}{\textit{\small{Cloud, Grails, Groovy, Spring, Spring security, Twitter Bootstrap, Google URL Shortener service, JQuery, CSS3, Git}}.}
+	\cvline{\weblink[\underline{Linkguardian}]{http://linkguardian.io} \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{In progress. manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{http://linkguardian.io}\newline{}
+		\textcolor{technologycolor}{\textit{\small{Jhipster, material design, Bootstrap, Spring, Google URL Shortener service, CSS3, PostgreSQL, Git, VPS}}.}
 	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
 	    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
@@ -459,7 +477,7 @@
 	    Open source lightweight iTunes-like software.\newline{}
 		\textcolor{technologycolor}{\textit{\small{Java 6, Hibernate, Swing, SwingX, JUnit, Subversion, Log4j, Maven 2, SVN}}.}}
 	    %\htmladdnormallink{http://www.blackdog-project.org/fr}{http://www.blackdog-project.org/fr}).}
-	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://awl.blackdog-project.org}]{http://blackdog.blackdog-project.org} :#end
+	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://awl.blackdog-project.org}]{http://awl.blackdog-project.org} :#end
 	    Open source Java API for the creation of graphical wizards in Swing}.
 #end
 
