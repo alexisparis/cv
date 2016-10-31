@@ -41,21 +41,23 @@
 #if ( $french == true )
 	\title{D\'eveloppeur logiciel
 	#if ( $qc == true )
-		\newline{}{\small{titulaire d'un \weblink[\underline{PRT en g\'enie}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
+		%\newline{}{\small{titulaire d'un \weblink[\underline{PRT en g\'enie}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
 	}
 #end
 #if ( $english == true )
 	\title{Software developer
 	#if ( $qc == true )
-		\newline{}{\small{\weblink[\underline{PRT}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
+		%\newline{}{\small{\weblink[\underline{PRT}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
 	}
 #end
 %\general{27 ans, c\'elibataire, nationalit\'e fran\c caise}
 
 #if ($anonymous == false)
-	\address{78 rue sainte H\'el\`ene}{F-57700 Hayange}    % optional, remove the line if not wanted
+	%\address{78 rue sainte H\'el\`ene}{F-57700 Hayange}
+	\address{1 rue r\'emy Thiel}{F-57100 Thionville}
+	%\address{1665 rue de Champlain}{Montr\'eal Qu\'ebec H2L 2S6}
 #end
 %\phone{(+33)6 60 48 24 26 (apr\`es 18h)}                    % optional, remove the line if not wanted
 #if ( $qc == true )
@@ -69,7 +71,7 @@
 #end
 
 #if ($anonymous == false)
-	\email{alexis.paris@blackdog-project.org}                      % optional, remove the line if not wanted
+	\email{alexis.rt.paris@gmail.com}                      % optional, remove the line if not wanted
 
 	#if ($age == true)
 		#if ($french == true)
@@ -115,11 +117,26 @@
 #end
 \weblink[\underline{Neopixl}]{http://neopixl.com}}
 #if ($french == true)
-	\textit{groupe \weblink[\underline{Smile}]{http://www.smile.fr}}
+	\textit{groupe \weblink[\underline{Smile}]{http://www.smile.fr}} \textit{\small{(sept. 2015 - d\'ec. 2016)}}
 #end
 #if ($english == true)
-	\textit{a \weblink[\underline{Smile}]{http://www.smile.fr} group company}
+	\textit{a \weblink[\underline{Smile}]{http://www.smile.fr} group company} \textit{\small{(sept. 2015 - dec. 2016)}}
 #end
+
+% total ACS
+#if ($french == true)
+	\cventry{Juin 2016 - Sept. 2016}{Mobile developer}{}{}{}
+	{D\'eveloppement d'une application Android pour tablettes pour \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
+	Gestion de prise de commandes sur circuits et support du mode offline.\newline{}
+#end
+% if french and english (debug mode) then close cventry without technologies
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{June 2016 - Sept. 2016}{Mobile developer}{}{}{}
+	{Development of an Android application for tablets for \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
+	Manage new commands directly on races et support of offline mode.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{Android, CouchDB(couchbase-lite android), Git, Sourcetree, Android studio.}}}}{}}
 
 
 % tarkett
@@ -127,6 +144,7 @@
 	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
 	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
 	D\'eveloppement du backend. D\'eveloppement de l'application Android associ\'ee.\newline{}
+	Refonte de l'application Angular \weblink[\underline{Care}]{http://care.floorinmotion.com/}.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
@@ -134,6 +152,7 @@
 	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
 	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
 	Development of the backend. Development of the Android application.\newline{}
+	Rework of the Angular application \weblink[\underline{Care}]{http://care.floorinmotion.com/}.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Android, Apiary, REST, Git, Sourcetree, Android studio.}}}}{}}
 
@@ -204,14 +223,20 @@
 	==============================================
 #end
 \weblink[\underline{Champ Cargosystems}]{http://www.champ.aero}}
+#if ($french == true)
+\textit{\small{(juil. 2014 - ao\^ut 2015)}}
+#end
+#if ($english == true)
+\textit{\small{(july 2014 - aug. 2015)}}
+#end
 
 % OCP
 #if ($french == true)
-	\cventry{Juil. 2014 - Aout 2015}{Software engineer}{}{}{Open cargo platform}{D\'eveloppement d'une plateforme applicative.\newline{}Mise en place d'une solution d'indexation inspir\'ee de spring-data.\newline{}D\'eveloppement du Framework UI.\newline{}
+	\cventry{Juil. 2014 - Ao\^ut 2015}{Software engineer}{}{}{Open cargo platform}{D\'eveloppement d'une plateforme applicative.\newline{}Mise en place d'une solution d'indexation inspir\'ee de spring-data.\newline{}D\'eveloppement du Framework UI.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{July. 2014 - Aug. 2015}{Software engineer}{}{}{Open cargo platform}{Development of a software platform.\newline{}Development of an indexing solution inspired from spring-data.\newline{}Development of the UI Framework.\newline{}
+	\cventry{July 2014 - Aug. 2015}{Software engineer}{}{}{Open cargo platform}{Development of a software platform.\newline{}Development of an indexing solution inspired from spring-data.\newline{}Development of the UI Framework.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{CQRS, Event Driven Programming, Apache Karaf, Vaadin, Elasticsearch, OSGi, Git, Sourcetree, Jira, Scrum, sonar, confluence.}}}}}
 
@@ -223,6 +248,12 @@
 	==============================================
 #end
 \weblink[\underline{Cetrel Securities}]{http://www.cetrel-securities.lu}}
+#if ($french == true)
+\textit{\small{(sept. 2013 - juin 2014)}}
+#end
+#if ($english == true)
+\textit{\small{(sept. 2013 - june 2014)}}
+#end
 
 #if ($french == true)
 	\cventry{Sept. 2013 - Juin 2014}{Team leader (10 mois)}{}{}{}{
@@ -251,11 +282,18 @@
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{CTG Luxembourg PSF}]{http://www.ctg.com}}
+\weblink[\underline{CTG Luxembourg PSF}]{http://www.ctg.com}} 
+#if ($french == true)
+\textit{\small{(sept. 2008 - ao\^ut 2013)}}
+#end
+#if ($english == true)
+\textit{\small{(sept. 2008 - aug. 2013)}}
+#end
+
 
 % direch
 #if ($french == true)
-	\cventry{Avril 2013 - Aout. 2013}{Team leader (5 mois)}{}{Administration des contributions directes au Luxembourg}{Direch}{D\'eveloppement d'une application web pour la saisie des d\'eclarations des soci\'et\'es.\newline{}
+	\cventry{Avril 2013 - Ao\^ut. 2013}{Team leader (5 mois)}{}{Administration des contributions directes au Luxembourg}{Direch}{D\'eveloppement d'une application web pour la saisie des d\'eclarations des soci\'et\'es.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
@@ -365,7 +403,7 @@
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{Infass Syst\`emes}]{http://infass.com}}
+\weblink[\underline{Infass Syst\`emes}]{http://infass.com}} \textit{\small{(nov. 2004 - sept. 2008)}}
 
 #if ($french == true)
 	\cventry{Nov. 2004 - sept. 2008}{Ing\'enieur \'etude et d\'eveloppement (3 ans et demi)}{}{Montgeron (Essone)}{}{Int\'egr\'e \`a une \'equipe d'ing\'enieurs participant \`a la conception d'une plateforme logicielle J2EE et au d\'eveloppement de progiciels pour des clients des secteurs de l'assurance (Siaci), du transport et du travail temporaire.\newline{}D\'eveloppements syst\`eme (interface utilisateur, persistence, outils d'administration, \dots) et m\'etier (cr\'eation de programmes de saisie de donn\'ees, reporting, \dots).\newline{}Prise en charge d'une partie de la maintenance et du suivi client\`ele.\newline{}
