@@ -2,6 +2,8 @@
 rm -Rf ./tmp/*
 rm -f ./output/*
 
+mkdir tmp
+
 generate () {
 	java -jar ../cvelocity-1.0-SNAPSHOT-all.jar \
 	-template=CV_Alexis_Paris_velocity.tex \

@@ -76,10 +76,10 @@
 
 	#if ($age == true)
 		#if ($french == true)
-			\extrainfo{35 ans, fran\c cais, mari\'e, 2 enfants.}
+			\extrainfo{37 ans, fran\c cais, mari\'e, 2 enfants.}
 		#end
 		#if ($english == true)
-			\extrainfo{35 years old, french, married, 2 children.}
+			\extrainfo{37 years old, french, married, 2 children.}
 		#end
 	#end	
 #end
@@ -97,7 +97,7 @@
 
 #if ( $qc == true )
 	#if ( $french == true )
-	\textit{Je souhaite continuer de diversifier et d'am\'eliorer mes connaissances en d\'eveloppement informatique tout en apportant l'exp\'erience acquise au cours de ces 12 derni\`eres ann\'ees dans divers domaines et technologies.}\newline{}
+	\textit{Je souhaite continuer de diversifier et d'am\'eliorer mes connaissances en d\'eveloppement informatique tout en apportant l'exp\'erience acquise au cours de ces 14 derni\`eres ann\'ees dans divers domaines et technologies.}\newline{}
 	#end
 #end
 
@@ -107,6 +107,32 @@
 #if ($english == true)
 	\section{Professional experiences}
 #end
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CGI
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{
+#if ( $debug == true )
+	==============================================
+#end
+\weblink[\underline{Facilit\'e - CGI}]{https://www.cgi.com}}
+#if ($french == true)
+\textit{\small{(f\'ev. 2017 - auj.)}}
+#end
+#if ($english == true)
+\textit{\small{(feb 2017 - now)}}
+#end
+
+% BNC
+#if ($french == true)
+	\cventry{F\'ev. 2017 - auj.}{Full stack software engineer}{}{}{Banque Nationale du Canada}{D\'eveloppement de microservices Spring boot.\newline{}D\'eveloppement de queries GraphQL.\newline{}D\'eveloppement React.\newline{}
+#end
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{Feb 2017 - now}{Full stack software engineer}{}{}{National Bank of Canada}{Development of Spring boot based microservices.\newline{}Development of GraphQL queries.\newline{}Development React.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{Microservice, REST, Spring boot, Openshift, MongoDB, GraphQL, Swagger, Docker, ReactJS, Redux.}}}}}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % neopixl
@@ -495,8 +521,10 @@
 
 #if ($french == true)
 	\section{R\'ealisations personnelles}
-	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{En cours. Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. Accessible sur \weblink[\underline{linkguardian.io}]{http://linkguardian.io}\newline{}
-		\textcolor{technologycolor}{\textit{\small{Angular, Jhipster, material design, Bootstrap, Spring, Google URL Shortener service, CSS3, PostgreSQL, Git, VPS}}.}}
+	\cvline{}{\weblink[\underline{https://bitbucket.org/alexis\_paris}]{https://bitbucket.org/alexis_paris}
+	    }.\newline{}
+	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2018)}}{Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. Accessible sur \weblink[\underline{linkguardian.io}]{https://www.linkguardian.io}\newline{}
+		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}}
 	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
 	    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar. \newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5, CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
@@ -511,8 +539,10 @@
 #end
 #if ($english == true)
 	\section{Personal projects}
-	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{In progress. manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{http://linkguardian.io}\newline{}
-		\textcolor{technologycolor}{\textit{\small{Angular, Jhipster, material design, Bootstrap, Spring, Google URL Shortener service, CSS3, PostgreSQL, Git, VPS}}.}
+	\cvline{}{\weblink[\underline{https://bitbucket.org/alexis\_paris}]{https://bitbucket.org/alexis_paris}
+	    }.\newline{}
+	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{In progress. manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{https://wwww.linkguardian.io}\newline{}
+		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}
 	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
 	    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
@@ -529,11 +559,11 @@
 
 #if ($french == true)
 	\section{Centres d'int\'er\^et}
-	\cvline{}{Sport (jogging), musique, bricolage.}
+	\cvline{}{Running, musique, bricolage.}
 #end
 #if ($english == true)
 	\section{Hobbies}
-	\cvline{}{Sport (jogging), music, do-it-yourself.}
+	\cvline{}{Running, music, do-it-yourself.}
 #end
 
 \end{document}
