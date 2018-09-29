@@ -231,6 +231,8 @@
 \providecommand*{\quotestyle}[1]{{\quotefont\color{quotecolor}#1}}
 \providecommand*{\sectionstyle}[1]{{\sectionfont\color{sectiontitlecolor}\textbf{#1}}}
 \providecommand*{\subsectionstyle}[1]{{\subsectionfont\color{subsectioncolor}\textbf{#1}}}
+\providecommand*{\subsectiontitlestyle}[1]{{\subsectionfont\color{subsectioncolor}\textbf{#1}}}
+\providecommand*{\subsectiontitlestyledetail}[1]{\textit{\small{#1}}}
 \providecommand*{\hintstyle}[1]{{\hintfont\color{hintcolor}#1}}
 
 % themes: casual (default), classic, ...
@@ -339,6 +341,14 @@
 % XIXI : espace avant sous-section
   \cvline[0.25em]{}{\subsectionstyle{#1}}}
 
+
+\newcommand*{\subsectiontitle}[2]{%
+% XIXI : espace avant sous-section
+  % \cvline[0.25em]{\subsectiontitlestyle{#1}}{\subsectiontitlestyledetail{#2}}}
+  % \cvlineextended[0.25em]{\mbox{ {\color{sectionrectanglecolor}\rule{2em}{.5ex}} \subsectiontitlestyle{#1} \subsectiontitlestyledetail{#2}}}{}}
+  \cvlineextended[0.25em]{\mbox{\subsectiontitlestyle{#1} \subsectiontitlestyledetail{#2}}}{} \\[0.05em]}
+
+
 % usage (inside section): \cvline{leftmark}{text}
 \newcommand*{\cvline}[3][.25em]{%
   \if@firstcvlineofsection%
@@ -346,6 +356,14 @@
   \else%
     \\[#1]\fi%
   \raggedleft\hintfont{#2} &#3}
+
+
+\newcommand*{\cvlineextended}[3][.25em]{%
+  \if@firstcvlineofsection%
+    \@firstcvlineofsectionfalse%
+  \else%
+    \\[#1]\fi%
+  \raggedright\hintfont{#2} &#3}
 
 % usage (inside section}: \cvdoubleitem{subtitle}{text}{subtitle}{text}
 \newcommand*{\cvdoubleitem}[4]{%

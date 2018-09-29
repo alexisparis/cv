@@ -39,25 +39,25 @@
 	\familyname{Paris}
 #end
 #if ( $french == true )
-	\title{D\'eveloppeur logiciel, ML/AI Novice
+	\title{D\'eveloppeur full stack %, ML/AI Novice
 	#if ( $qc == true )
 		%\newline{}{\small{titulaire d'un \weblink[\underline{PRT en g\'enie}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
 	}
 #end
 #if ( $english == true )
-	\title{Software developer, ML/AI Novice
+	\title{Full stack software developer %, ML/AI Novice
 	#if ( $qc == true )
 		%\newline{}{\small{\weblink[\underline{PRT}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
 	}
 #end
-%\general{27 ans, c\'elibataire, nationalit\'e fran\c caise}
 
 #if ($anonymous == false)
 	%\address{78 rue sainte H\'el\`ene}{F-57700 Hayange}
 	%\address{1 rue r\'emy Thiel}{F-57100 Thionville}
 	\address{1665 rue de Champlain}{H2L 2S6 Montr\'eal Qu\'ebec CANADA}
+	%\address{2554 rue Lyall}{H1N 3G6 Montr\'eal Qu\'ebec CANADA}
 #end
 %\phone{(+33)6 60 48 24 26 (apr\`es 18h)}                    % optional, remove the line if not wanted
 #if ( $qc == true )
@@ -109,20 +109,18 @@
 #end
 
 
+
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CGI
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{
-#if ( $debug == true )
-	==============================================
-#end
-\weblink[\underline{Facilit\'e - CGI}]{https://www.cgi.com}}
-#if ($french == true)
-\textit{\small{(f\'ev. 2017 - auj.)}}
-#end
-#if ($english == true)
-\textit{\small{(feb 2017 - now)}}
-#end
+\subsectiontitle{\weblink[\underline{Facilit\'e - CGI}]{https://www.cgi.com/}}{
+	#if ($french == true)
+		(f\'ev. 2017 - auj.)
+	#end
+	#if ($english == true)
+		(feb 2017 - now)
+	#end
+}
 
 % BNC
 #if ($french == true)
@@ -132,35 +130,34 @@
 #if ($english == true)
 	\cventry{Feb 2017 - now}{Full stack software engineer}{}{}{National Bank of Canada}{Development of Spring boot based microservices.\newline{}Development of GraphQL queries.\newline{}Development React.\newline{}
 #end
-\textcolor{technologycolor}{\textit{\small{\textbf{Microservice, REST, Spring boot, Openshift, MongoDB, GraphQL, Swagger, Docker, ReactJS, Redux.}}}}}
+\textcolor{technologycolor}{\textit{\small{\textbf{Microservices, REST, Spring boot, Openshift, MongoDB, GraphQL, Swagger, Docker, ReactJS, Redux.}}}}}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % neopixl
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{Neopixl}]{http://neopixl.com}}
-#if ($french == true)
-	\textit{groupe \weblink[\underline{Smile}]{http://www.smile.fr}} \textit{\small{(sept. 2015 - d\'ec. 2016)}}
-#end
-#if ($english == true)
-	\textit{a \weblink[\underline{Smile}]{http://www.smile.fr} group company} \textit{\small{(sept. 2015 - dec. 2016)}}
-#end
+\subsectiontitle{\weblink[\underline{Neopixl}]{http://neopixl.com}}{
+	#if ($french == true)
+		groupe \weblink[\underline{Smile}]{http://www.smile.fr} (sept. 2015 - d\'ec. 2016)
+	#end
+	#if ($english == true)
+		a \weblink[\underline{Smile}]{http://www.smile.fr} group company (sept. 2015 - dec. 2016)
+	#end
+}
 
 % total ACS
 #if ($french == true)
 	\cventry{Juin 2016 - Sept. 2016}{Mobile developer}{}{}{}
-	{D\'eveloppement d'une application Android pour tablettes pour \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
+	{D\'eveloppement d'une application tablette Android pour \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
 	Gestion de prise de commandes sur circuits et support du mode offline.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{June 2016 - Sept. 2016}{Mobile developer}{}{}{}
-	{Development of an Android application for tablets for \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
+	{Development of an Android application for \weblink[\underline{Total ACS}]{http://www.acs.total.com/}.\newline{}
 	Manage new commands directly on races et support of offline mode.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Android, CouchDB(couchbase-lite android), Git, Sourcetree, Android studio.}}}}{}}
@@ -170,7 +167,7 @@
 #if ($french == true)
 	\cventry{Depuis d\'ec. 2015}{Frontend developer}{}{}{}
 	{D\'eveloppement de l'application web Living In Place pour \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
-	D\'eveloppement du backend. D\'eveloppement de l'application Android associ\'ee.\newline{}
+	D\'eveloppement du backend et de l'application Android associ\'ee.\newline{}
 	Refonte de l'application Angular \weblink[\underline{Care}]{http://care.floorinmotion.com/}.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
@@ -178,7 +175,7 @@
 #if ($english == true)
 	\cventry{Since dec. 2015}{Frontend developer}{}{}{}
 	{Development of the web application Living In Place for \weblink[\underline{Tarkett}]{http://www.tarkett.fr/}.\newline{}
-	Development of the backend. Development of the Android application.\newline{}
+	Development of the backend and of the Android application.\newline{}
 	Rework of the Angular application \weblink[\underline{Care}]{http://care.floorinmotion.com/}.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Grunt, Bower, Bootstrap, Spring boot, DynamoDB, Android, Apiary, REST, Git, Sourcetree, Android studio.}}}}{}}
@@ -188,26 +185,26 @@
 #if ($french == true)
 	\cventry{Avril 2016}{Developer}{}{}{}
 	{Mise en place d'une proc\'edure de migration d'une application \weblink[\underline{Parse}]{http://www.parse.com/} vers un serveur parse d\'edi\'e.\newline{}
-	D\'eveloppement d'un module node pour migrer les fichiers.\newline{}
+	D\'eveloppement d'un module node pour migrer les fichiers sur amazon S3.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{Apr. 2016}{Developer}{}{}{}
 	{Documentation of a procedure to migrate a \weblink[\underline{Parse}]{http://www.parse.com/} application to a self hosted parse server.\newline{}
-	Development of a node module to migrate files.\newline{}
+	Development of a node module to migrate files stored on Amazon S3.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Parse server, MongoDB, node.js.}}}}{}}
 
 % tango
 #if ($french == true)
-	\cventry{Depuis sept. 2015}{Backend \& Frontend developer}{}{}{}
+	\cventry{Sept. 2015 - d\'ec. 2016}{Backend \& Frontend developer}{}{}{}
 	{D\'eveloppement d'une solution de monitoring pour l'API REST de \weblink[\underline{Tango}]{http://www.tango.lu/}.\newline{}
 #end
 % if french and english (debug mode) then close cventry without technologies
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Since sept. 2015}{Backend \& Frontend developer}{}{}{}
+	\cventry{Sept. 2015 - dec. 2016}{Backend \& Frontend developer}{}{}{}
 	{Development of a monitoring solution for \weblink[\underline{Tango}]{http://www.tango.lu/} REST API.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, JHipster, Spring-boot, ChartJS, REST, Git, Sourcetree.}}}}{}}
@@ -233,29 +230,29 @@
 #end
 #if ($french == true)
 	\cventry{}{Backend \& Frontend developer}{}{}{}
-	{Maintenance d'une plateforme de notifications Push \weblink[\underline{PushPixl}]{http://pushpixl.io}.\newline{}
+	{Maintenance d'une plateforme de notifications pour smartphones \weblink[\underline{PushPixl}]{http://pushpixl.io}.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
 	\cventry{}{Backend \& Frontend developer}{}{}{}
-	{Maintenance of an inhouse application \weblink[\underline{PushPixl}]{http://pushpixl.io} managing push notifications.\newline{}
+	{Maintenance of an inhouse application \weblink[\underline{PushPixl}]{http://pushpixl.io} managing notifications for smartphones.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{AngularJS, Spring-boot, REST, Git, confluence.}}}}}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Champ
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{Champ Cargosystems}]{http://www.champ.aero}}
-#if ($french == true)
-\textit{\small{(juil. 2014 - ao\^ut 2015)}}
-#end
-#if ($english == true)
-\textit{\small{(july 2014 - aug. 2015)}}
-#end
+\subsectiontitle{\weblink[\underline{Champ Cargosystems}]{http://www.champ.aero}}{
+	#if ($french == true)
+		(juil. 2014 - ao\^ut 2015)
+	#end
+	#if ($english == true)
+		(july 2014 - aug. 2015)
+	#end
+}
 
 % OCP
 #if ($french == true)
@@ -270,61 +267,60 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % cetrel securities
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{Cetrel Securities}]{http://www.cetrel-securities.lu}}
-#if ($french == true)
-\textit{\small{(sept. 2013 - juin 2014)}}
-#end
-#if ($english == true)
-\textit{\small{(sept. 2013 - june 2014)}}
-#end
+\subsectiontitle{\weblink[\underline{Cetrel Securities}]{http://www.cetrel-securities.lu}}{
+	#if ($french == true)
+		(sept. 2013 - juin 2014)
+	#end
+	#if ($english == true)
+		(sept. 2013 - june 2014)
+	#end
+}
 
 #if ($french == true)
-	\cventry{Sept. 2013 - Juin 2014}{Team leader (10 mois)}{}{}{}{
+	\cventry{Sept. 2013 - Juin 2014}{Team leader}{}{}{}{
+	- R\'ef\'erent technique de l'\'equipe de d\'eveloppement.\newline{}
+	- Veille technologique et mise en place d'un processus d'industrialisation logicielle.\newline{}
 	- D\'eveloppement d'une application Web GWT permettant la validation des prix de r\'ef\'erence d'instruments financiers \`a partir des donn\'ees de diff\'erents fournisseurs (SIX Telekurs, Reuters, Bloomberg).\newline{}
 	- Impl\'ementation d'exports des donn\'ees SIX Telekurs.\newline{}
 	- D\'eveloppement d'une application Web GWT permettant de g\'erer les droits d'acc\`es aux diff\'erents produits.\newline{}
 	- D\'eveloppement d'outils g\'en\'eriques pour l'equipe support pour l'export/import de tables d'une base de donn\'ees \LEFTarrow\RIGHTarrow fichiers csv ou xml.\newline{}
-	- R\'ef\'erent technique de l'\'equipe de d\'eveloppement.\newline{}
-	- Veille technologique et mise en place d'un processus d'industrialisation logicielle.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Sept. 2013 - June 2014}{Team leader (10 mois)}{}{}{}{
+	\cventry{Sept. 2013 - June 2014}{Team leader}{}{}{}{
+	- As technical officer, monitoring technological developments and setting up a software industrialisation platform.\newline{}
 	- Development of a GWT application managing the validation of reference prices for financial assets based on the data of several providers (SIX Telekurs, Reuters, Bloomberg).\newline{}
 	- Export of SIX Telekurs's data.\newline{}
 	- Development of a GWT application managing access rights for several Cetrel Securities's products.\newline{}
 	- Development of generic tools for import/export of data.\newline{}
-	- As technical officer, monitoring technological developments and setting up a software industrialisation platform.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Apache Tomcat 6, GWT 2, Spring, Spring-security, Spring-web-service}, SOAP Web services, jOOQ, HTML, CSS, \textbf{Twitter Bootstrap}, Web services securis\'es (SSL), Args4J, Oracle 11, PL/SQL, JUnit, dbUnit, Mockito, Subversion.}}}}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ctg
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{CTG Luxembourg PSF}]{http://www.ctg.com}} 
-#if ($french == true)
-\textit{\small{(sept. 2008 - ao\^ut 2013)}}
-#end
-#if ($english == true)
-\textit{\small{(sept. 2008 - aug. 2013)}}
-#end
-
+\subsectiontitle{\weblink[\underline{CTG Luxembourg PSF}]{http://www.ctg.com}}{
+	#if ($french == true)
+		(sept. 2008 - ao\^ut 2013)
+	#end
+	#if ($english == true)
+		(sept. 2008 - aug. 2013)
+	#end
+}
 
 % direch
 #if ($french == true)
-	\cventry{Avril 2013 - Ao\^ut. 2013}{Team leader (5 mois)}{}{Administration des contributions directes au Luxembourg}{Direch}{D\'eveloppement d'une application web pour la saisie des d\'eclarations des soci\'et\'es.\newline{}
+	\cventry{Avril 2013 - Ao\^ut. 2013}{Team leader}{}{Administration des contributions directes au Luxembourg}{Direch}{D\'eveloppement d'une application web pour la saisie des d\'eclarations des soci\'et\'es.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{April 2013 - Aug. 2013}{Team leader (5 months)}{}{Administration des contributions directes au Luxembourg}{Direch}{Development of a web application used by companies to make their tax declarations.\newline{}
+	\cventry{April 2013 - Aug. 2013}{Team leader}{}{Administration des contributions directes au Luxembourg}{Direch}{Development of a web application used by companies to make their tax declarations.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Websphere 7 \& RAD7.5, SOAP Web services, Struts 2}, JPA, HTML, CSS, \textbf{Twitter Bootstrap}, Javascript, JQuery, IBM DB2, Git.}}}}
 
@@ -333,17 +329,16 @@
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Juin 2012 - Sept. 2012}{Software architect (4 mois)}{}{CTIE}{}{Architecture d'une solution web g\'en\'erique utilis\'ee comme base aux projets Web CTIE :\newline{}
+	\cventry{Juin 2012 - Sept. 2012}{Software architect}{}{CTIE}{}{Architecture d'une solution web g\'en\'erique utilis\'ee comme base aux projets Web CTIE :\newline{}
 	- Mise en place d'\'el\'ements facilitant la mise au point de tests fonctionnels\newline{}
 	- Mise en place d'une validation JSR303 (Hibernate validator)\newline{}
-	- Mise en place de protections pour la s\'ecurit\'e du syst\`eme\newline{}
 	- D\'eveloppement d'une partie "administration des listes de choix" g\'en\'erique\newline{}
 	- Mise en place d'une API permettant la cr\'eation dynamique de requ\^etes JPQL\newline{}
 	- D\'eveloppement d'un syst\`eme de g\'en\'eration de documents Office docx \& xlsx\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{June 2012 - Sept. 2012}{Software architect (4 months)}{}{CTIE}{}{Architecture of a generic web solution used as standards for future CTIE's projects :\newline{}
+	\cventry{June 2012 - Sept. 2012}{Software architect}{}{CTIE}{}{Architecture of a generic web solution used as standards for future CTIE's projects :\newline{}
 	- Functional tests based on Arquilian\newline{}
 	- Generic validation layer based on JSR303 (Hibernate validator)\newline{}
 	- API simplifying the creation of dynamic JPQL queries\newline{}
@@ -356,11 +351,11 @@
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Mai 2012}{Software engineer (1 semaine)}{}{projet interne}{IDC Timer}{Analyse, d\'eveloppement, tests \& mise en production d'une solution permettant de collecter les temps d'interventions des agents HelpDesk CTG en vue d'une analyse statistique.\newline{}
+	\cventry{Mai 2012}{Software engineer}{}{projet interne}{IDC Timer}{Analyse, d\'eveloppement, tests \& mise en production d'une solution permettant de collecter les temps d'interventions des agents HelpDesk CTG en vue d'une analyse statistique.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{May 2012}{Software engineer (1 week)}{}{internal project}{IDC Timer}{Analyse, development, tests and deployment of a solution registering the duration of calls of helpdesk agents.\newline{}
+	\cventry{May 2012}{Software engineer}{}{internal project}{IDC Timer}{Analyse, development, tests and deployment of a solution registering the duration of calls of helpdesk agents.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{HTML5, CSS3}, Javascript, \textbf{Node.js, MongoDB, architecture REST}, JQuery, JQuery UI, Mustache, Git.}}}}
 
@@ -369,37 +364,43 @@
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Avril 2012}{Software engineer (4 semaines)}{}{projet interne}{\weblink[\underline{Connect to grow}]{http://www.connecttogrow.eu/}}{D\'eveloppement d'un site web, dans le cadre de la campagne de recrutement CTG, int\'egrant du contenu des r\'eseaux sociaux \textbf{Twitter, Facebook \& LinkedIn}.\newline{}
+	\cventry{Avril 2012}{Software engineer}{}{projet interne}{Connect to grow}{D\'eveloppement d'un site web, dans le cadre de la campagne de recrutement CTG, int\'egrant du contenu des r\'eseaux sociaux \textbf{Twitter, Facebook \& LinkedIn}.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{April 2012}{Software engineer (4 weeks)}{}{internal project}{\weblink[\underline{Connect to grow}]{http://www.connecttogrow.eu/}}{During the recruitment campaign of CTG, development of a web site collecting data from differents social networks \textbf{Twitter, Facebook \& LinkedIn}.\newline{}
+	\cventry{April 2012}{Software engineer}{}{internal project}{\weblink[\underline{Connect to grow}]{http://www.connecttogrow.eu/}}{During the recruitment campaign of CTG, development of a web site collecting data from differents social networks \textbf{Twitter, Facebook \& LinkedIn}.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{JQuery mobile, JSONP}, HTML, CSS, Javascript, JQuery, Git.}}}}
+
+
+
 
 % Psymap
 #if ( $debug == true )
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Oct. 2011 - Juin. 2012}{Software engineer (9 mois)}{}{projet interne}{Psymap}{D\'eveloppement d'une application web permettant de g\'erer les relations client\`ele en fonction de la m\'ethodologie \weblink[MBTI]{http://fr.wikipedia.org/wiki/Myers_Briggs_Type_Indicator}.\newline{}
+	\cventry{Oct. 2011 - Juin. 2012}{Software engineer}{}{projet interne}{Psymap}{D\'eveloppement d'une application web permettant de g\'erer les relations client\`ele en fonction de la m\'ethodologie \weblink[MBTI]{http://fr.wikipedia.org/wiki/Myers_Briggs_Type_Indicator}.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Oct. 2011 - June. 2012}{Software engineer (9 months)}{}{internal project}{Psymap}{Development of a web application managing the customer relationship based on the \weblink[MBTI's methodology]{http://fr.wikipedia.org/wiki/Myers_Briggs_Type_Indicator}.\newline{}
+	\cventry{Oct. 2011 - June. 2012}{Software engineer}{}{internal project}{Psymap}{Development of a web application managing the customer relationship based on the \weblink[MBTI's methodology]{http://fr.wikipedia.org/wiki/Myers_Briggs_Type_Indicator}.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{\texttt{C\#}, .Net, MVC}, Razor, IIS, Enterprise Library, Visual studio, HTML, CSS, Javascript, JQuery, \textbf{Foundation}, SQL Server, Team Foundation Server.}}}}
+
+
+
 
 % AEIMM
 #if ( $debug == true )
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Oct. 2011 - Fev. 2012}{Software engineer (5 mois)}{}{Minist\`ere des affaires \'etrang\`eres au Luxembourg}{Aeimm}{Maintenance \'evolutive d'une application web permettant le suivi de la d\'elivrance de titres de s\'ejour.\newline{}
+	\cventry{Oct. 2011 - Fev. 2012}{Software engineer}{}{Minist\`ere des affaires \'etrang\`eres au Luxembourg}{Aeimm}{Maintenance \'evolutive d'une application web permettant le suivi de la d\'elivrance de titres de s\'ejour.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Oct. 2011 - Feb. 2012}{Software engineer (5 months)}{}{Ministry of foreign affairs in Luxembourg}{Aeimm}{Maintenance and development of new functionalities of an application managing resident's permits.\newline{}
+	\cventry{Oct. 2011 - Feb. 2012}{Software engineer}{}{Ministry of foreign affairs in Luxembourg}{Aeimm}{Maintenance and development of new functionalities of an application managing resident's permits.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Websphere 7. \& RAD7.5, SOAP Web services, Struts 2}, JPA, HTML, CSS, Javascript, JQuery, IBM DB2, SVN.}}}}
 
@@ -408,36 +409,53 @@
 	--------------------------------------------------------------------------------------------
 #end
 #if ($french == true)
-	\cventry{Sept. 2008 - sept. 2011}{Software engineer (3 ans)}{}{Minist\`ere de la justice au Luxembourg}{Jucha}{D\'eveloppement d'une application client lourd pour la gestion d'affaires judiciaires. Interconnexion du syst\`eme de gestion des casiers judiciaires avec le r\'eseau europ\'een. D\'eveloppements syst\`emes, interfaces de saisie de donn\'ees et g\'en\'eration de statistiques.\newline{}Maintenance de l'application, migration RAD7.0 \RIGHTarrow RAD7.5 \& EJB2 \RIGHTarrow EJB3.\newline{}
-	Mise en place d'outils d'int\'egration continue (Hudson, Sonar).\newline{}
+	\cventry{Sept. 2008 - sept. 2011}{Software engineer}{}{Minist\`ere de la justice au Luxembourg}{Jucha}{
+	- D\'eveloppement d'une application client lourd pour la gestion d'affaires judiciaires.\newline{}
+	- Interconnexion du syst\`eme de gestion des casiers judiciaires avec le r\'eseau europ\'een.\newline{}
+	- D\'eveloppements syst\`emes, interfaces de saisie de donn\'ees et g\'en\'eration de statistiques.\newline{}
+	- Maintenance de l'application, migration RAD7.0 \RIGHTarrow RAD7.5 \& EJB2 \RIGHTarrow EJB3.\newline{}
+	- Mise en place d'outils d'int\'egration continue (Hudson, Sonar).\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Sept. 2008 - sept. 2011}{Software engineer (3 years)}{}{Ministry of justice in Luxembourg}{Jucha}{Development of an application managing lawsuits and police records. Interconnection with the european police records network.\newline{}
+	\cventry{Sept. 2008 - sept. 2011}{Software engineer}{}{Ministry of justice in Luxembourg}{Jucha}{
+	- Development of an application managing lawsuits and police records. Interconnection with the european police records network.\newline{}
 	- Technical analysis\newline{}
 	- Client development (SWT, Jgoodies, architecture HMVC).\newline{}
 	- Development of a document generation system based on RTF.\newline{}
-	- Unit tests, Packaging and deployment\newline{}
-	- Environment : 3 analysts, 9 developers \& 3 testers.\newline{}
 	- Maintenance of the application, debugging and migration from RAD7.0 to RAD7.5 and from EJB2 to EJB3. Use of JPA for the persistence layer.\newline{}
+	- Setup of continuous integration tools (Hudson, Sonar).\newline{}
 #end
-\textcolor{technologycolor}{\textit{\small{\textbf{EJB 3.0, JPA (OpenJPA), Java 6.0, java web start, Websphere 6.0 \& 7.0, RAD7.5}, JAX-WS, JUnit, Eclipse 3.4, OSGi, SWT, Freemarker, TDD, Scrum, IBM DB2, Maven 2, SVN, iText (PDF generation)}}}}
+\textcolor{technologycolor}{\textit{\small{\textbf{EJB 3.0, JPA (OpenJPA), Java 6.0, java web start, Websphere 6.0 \& 7.0, RAD7.5}, JAX-WS, JUnit, Eclipse 3.4, OSGi, SWT, Freemarker, TDD, Scrum, IBM DB2, Maven, SVN, iText (PDF generation)}}}}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Infass systemes
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{
 #if ( $debug == true )
 	==============================================
 #end
-\weblink[\underline{Infass Syst\`emes}]{http://infass.com}} \textit{\small{(nov. 2004 - sept. 2008)}}
+\subsectiontitle{\weblink[\underline{Infass Syst\`emes}]{http://infass.com}}{
+	#if ($french == true)
+		(nov. 2004 - sept. 2008)
+	#end
+	#if ($english == true)
+		(nov. 2004 - sept. 2008)
+	#end
+}
 
 #if ($french == true)
-	\cventry{Nov. 2004 - sept. 2008}{Ing\'enieur \'etude et d\'eveloppement (3 ans et demi)}{}{Montgeron (Essone)}{}{Int\'egr\'e \`a une \'equipe d'ing\'enieurs participant \`a la conception d'une plateforme logicielle J2EE et au d\'eveloppement de progiciels pour des clients des secteurs de l'assurance (Siaci), du transport et du travail temporaire.\newline{}D\'eveloppements syst\`eme (interface utilisateur, persistence, outils d'administration, \dots) et m\'etier (cr\'eation de programmes de saisie de donn\'ees, reporting, \dots).\newline{}Prise en charge d'une partie de la maintenance et du suivi client\`ele.\newline{}
+	\cventry{Nov. 2004 - sept. 2008}{Ing\'enieur \'etude et d\'eveloppement}{}{Montgeron (Essone)}{}{
+	- Conception d'une plateforme logicielle J2EE et d\'eveloppement de progiciels pour des clients des secteurs de l'assurance (Siaci), du transport et du travail temporaire.\newline{}
+	- D\'eveloppements syst\`eme (interface utilisateur, persistence, outils d'administration, \dots) et m\'etier (cr\'eation de programmes de saisie de donn\'ees, reporting, \dots).\newline{}
+	- Prise en charge de la maintenance et du suivi client\`ele.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Nov. 2004 - sept. 2008}{Software engineer (4 years)}{}{Montgeron (Essone)}{}{Develoment of a J2EE platform and several sofware packages.\newline{}Development of software packages for customers in the domain of insurance (Siaci), transport (Les Nouveaux Coursiers) \& temporary work (Bref Services).\newline{}System developments (user interface, persistance, administration tools) and business developments (reporting).\newline{}Development of a scheduled tasks system.\newline{}Maintenance and follow-up of customers demands and problems.\newline{}
+	\cventry{Nov. 2004 - sept. 2008}{Software engineer}{}{Montgeron (Essone)}{}{
+	- Develoment of a J2EE platform and several sofware packages.\newline{}
+	- Development of software packages for customers in the domain of insurance (Siaci), transport (Les Nouveaux Coursiers) \& temporary work (Bref Services).\newline{}
+	- System developments (user interface, persistance, administration tools) and business developments (reporting).\newline{}
+	- Maintenance and follow-up of customers demands and problems.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{J2EE (EJB 2), JOnAS, DB2}, Swing, JUnit, Java web start, Xslt, Apache Fop, Apache Ant, CVS.}}}}
 
@@ -452,11 +470,11 @@
 #if ($english == true)
 	\section{Technologies}
 #end
-\cvcomputer{#if ($french == true)Langages#end#if ($english == true)Languages#end}{\textbf{Java / J2EE(EJB 3)}, Groovy, Scala, Javascript, Html, Css, \texttt{C\#}, SQL, PL/SQL, Bash, XML, Python, Ada, Latex}.
-\cvcomputer{#if ($french == true)Serveurs#end#if ($english == true)Server#end}{Glassfish, IBM Websphere 6.0 \& 7.0, Tomcat, Apache Karaf, JOnAS}.
-\cvcomputer{#if ($french == true)Base de donn\'ees#end#if ($english == true)Database#end}{\textbf{Oracle database 11}, \textbf{PostgreSQL}, \textbf{IBM DB2v9}, Elasticsearch, SQL Server, MongoDB, Derby, MySQL}.
+\cvcomputer{#if ($french == true)Langages#end#if ($english == true)Languages#end}{\textbf{Java}, \textbf{Javascript}, J2EE, Groovy, Scala, Html, Css, \texttt{C\#}, SQL, PL/SQL, Bash, XML, Python, Ada, Latex}.
+\cvcomputer{#if ($french == true)Serveurs#end#if ($english == true)Server#end}{Tomcat, Glassfish, IBM Websphere 6.0 \& 7.0, Apache Karaf, JOnAS}.
+\cvcomputer{#if ($french == true)Base de donn\'ees#end#if ($english == true)Database#end}{\textbf{Oracle database 11}, \textbf{PostgreSQL}, \textbf{MongoDB}, \textbf{IBM DB2v9}, Elasticsearch, SQL Server, Derby, MySQL}.
 \cvcomputer{Framework, API}{\textbf{Angular}, \textbf{GWT 2.5.1},  \textbf{Grails}, \textbf{Play!}, \textbf{Node.js}, \textbf{Vaadin}, JPA, \textbf{Spring}, \textbf{Spring security}, \textbf{Spring Web Service}, JUnit, Mockito, dbUnit, OSGi, \textbf{Google Guava}, \textbf{jOOQ}, \textbf{Bean Validation JSR303}, \textbf{Args4J}, \textbf{Twitter Bootstrap}, \textbf{Foundation}}.
-\cvcomputer{#if ($french == true)EDI \& Outils#end#if ($english == true)IDE \& Tools#end}{\textbf{Eclipse}, \textbf{IntelliJ IDEA}, Netbeans, IBM RAD 7.5, Visual Studio, \textbf{Maven 2}, Ant, \textbf{JProfiler}, \textbf{Jenkins (Hudson)}, \textbf{Sonar}, Gimp, ArgoUML, Jira, Confluence, SourceTree}.
+\cvcomputer{#if ($french == true)EDI \& Outils#end#if ($english == true)IDE \& Tools#end}{\textbf{IntelliJ IDEA}, \textbf{Eclipse}, Visual Studio, Netbeans, IBM RAD 7.5, \textbf{Maven}, Ant, \textbf{JProfiler}, \textbf{Jenkins (Hudson)}, \textbf{Sonar}, Gimp, ArgoUML, Jira, Confluence, SourceTree}.
 \cvcomputer{Patterns}{\textbf{CQRS}, \textbf{Event Driven Programming}}.
 \cvcomputer{Versioning}{\textbf{Git}, \textbf{Subversion}, CVS, TFS}.
 \cvcomputer{#if ($french == true)Environnements#end#if ($english == true)OS#end}{\textbf{Unix / Linux (Ubuntu 8.10, Fedora 6, FreeBSD, Red hat enterprise, Mandrake)}, Mac OS X, Windows (XP, Vista, 7)}.
@@ -501,7 +519,7 @@
 	\cventry{2011}{\textbf{3 jours "Dojo Toolkit, applications Ajax/RIA en JavaScript"}}{organis\'ee par Orsys}{}{}{}  % arguments 3 to 6 are optional
 	\cventry{2009 et 2010}{\textbf{Devoxx}}{participation aux 3 journ\'ees de conf\'erences}{\weblink[\underline{www.devoxx.com}]{http://www.devoxx.com}}{}{}  % arguments 3 to 6 are optional
 	%\cventry{2009}{\textbf{Devoxx}}{participation aux 3 jours de conf\'erence}{}{}{}  % arguments 3 to 6 are optional
-	\cventry{Depuis 2010}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
+	\cventry{2010 - 2016}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
 #end
 #if ($english == true)
 	\section{Certifications}
@@ -525,9 +543,9 @@
 	    }.\newline{}
 	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2018)}}{Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. Accessible sur \weblink[\underline{linkguardian.io}]{https://www.linkguardian.io}\newline{}
 		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}}
-	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
-	    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar. \newline{}
-		\textcolor{technologycolor}{\textit{\small{HTML5, CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
+	%\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
+	%    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar. \newline{}
+	%	\textcolor{technologycolor}{\textit{\small{HTML5, CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
 	#if ($anonymous == false)\cvline{Site web}{\textbf{}\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5, Javascript, CSS3, JQuery, Knockout}}}}.#end
 	\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://blackdog.blackdog-project.org}]{http://blackdog.blackdog-project.org/fr} :#end
@@ -541,11 +559,11 @@
 	\section{Personal projects}
 	\cvline{}{\weblink[\underline{https://bitbucket.org/alexis\_paris}]{https://bitbucket.org/alexis_paris}
 	    }.\newline{}
-	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{In progress. manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{https://wwww.linkguardian.io}\newline{}
+	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{Manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{https://www.linkguardian.io}\newline{}
 		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}
-	\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
-	    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
-		\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
+	%\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
+	%    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
+	%	\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
 	#if ($anonymous == false)\cvline{Personal website}{\textbf{}
 		\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
 		\textcolor{technologycolor}{\textit{\small{HTML5, Javascript, CSS3, JQuery, Knockout}}}}.#end
@@ -559,11 +577,11 @@
 
 #if ($french == true)
 	\section{Centres d'int\'er\^et}
-	\cvline{}{Running, musique, bricolage.}
+	\cvline{}{Sport, bricolage.}
 #end
 #if ($english == true)
 	\section{Hobbies}
-	\cvline{}{Running, music, do-it-yourself.}
+	\cvline{}{Sport, do-it-yourself.}
 #end
 
 \end{document}
