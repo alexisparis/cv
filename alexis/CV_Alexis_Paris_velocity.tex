@@ -39,14 +39,14 @@
 	\familyname{Paris}
 #end
 #if ( $french == true )
-	\title{D\'eveloppeur full stack %, ML/AI Novice
+	\title{Artisan d\'eveloppeur %, ML/AI Novice
 	#if ( $qc == true )
 		%\newline{}{\small{titulaire d'un \weblink[\underline{PRT en g\'enie}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
 	}
 #end
 #if ( $english == true )
-	\title{Full stack software developer %, ML/AI Novice
+	\title{Artisan developer %, ML/AI Novice
 	#if ( $qc == true )
 		%\newline{}{\small{\weblink[\underline{PRT}]{https://github.com/alexisparis/cv/raw/master/alexis/certifications/oiq_prt_genie.pdf}}}
 	#end
@@ -75,10 +75,10 @@
 
 	#if ($age == true)
 		#if ($french == true)
-			\extrainfo{37 ans, fran\c cais, mari\'e, 2 enfants.}
+			\extrainfo{40 ans, fran\c cais, mari\'e, 2 enfants.}
 		#end
 		#if ($english == true)
-			\extrainfo{37 years old, french, married, 2 children.}
+			\extrainfo{40 years old, french, married, 2 children.}
 		#end
 	#end	
 #end
@@ -96,7 +96,7 @@
 
 #if ( $qc == true )
 	#if ( $french == true )
-	\textit{Je souhaite continuer de diversifier et d'am\'eliorer mes connaissances en d\'eveloppement informatique tout en apportant l'exp\'erience acquise au cours de ces 14 derni\`eres ann\'ees dans divers domaines et technologies.}\newline{}
+	\textit{Je souhaite continuer de diversifier et d'am\'eliorer mes connaissances en d\'eveloppement informatique tout en apportant l'exp\'erience acquise au cours de ces 17 derni\`eres ann\'ees dans divers domaines et technologies.}\newline{}
 	#end
 #end
 
@@ -110,24 +110,66 @@
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intact
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsectiontitle{\weblink[\underline{Intact lab}]{https://www.intactlab.ca/}}{
+	#if ($french == true)
+		(jan. 2019 - auj.)
+	#end
+	#if ($english == true)
+		(jan 2019 - now)
+	#end
+}
+
+% Selfserve
+#if ($french == true)
+	\cventry{Jan. 2019 - auj.}{D\'eveloppeur principal}{}{}{Espace client}{
+	Refonte de la structure de microservices Spring-boot et node et d'un pipeline Jenkins.\newline{}
+	Proposition et mise en place de technologies / m\'ethodologies (Typescript, Kotlin, test) et d'outils facilitant le travail des d\'eveloppeurs et testeurs (mock-server).\newline{}
+	Prix d'innovation Intact Lab 2020.\newline{}
+#end
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{Jan 2019 - now}{Principal developer}{}{}{Client centre}{
+	Restructuring of Spring-boot / Node microservices, custom Jenkins pipeline.\newline{}
+	Suggestions and setup of technologies / methodologies (Typescript, Kotlin, test) and tools to help developers and testers do their day-to-day job (mock-server).\newline{}
+	Intact Lab price of innovation 2020.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{Microservices, REST, Spring boot, NodeJS, ExpressJS, Openshift, MongoDB, Redis, Mountebank, GraphQL, Open-api, Kotlin, Typescript, Jenkins, Docker.}}}}}
+
+
+% Quick quote widget
+#if ($french == true)
+	\cventry{Mar. 2019 - avr. 2019}{D\'eveloppeur principal}{}{}{Rapid prototyping}{
+	Quick quote widget : microservice Quarkus.\newline{}
+#end
+#if ($french == true && $english == true)}#end
+#if ($english == true)
+	\cventry{Mar. 2019 - apr. 2019}{Principal developer}{}{}{Rapid prototyping}{
+	Quick quote widget : Quarkus microservice.\newline{}
+#end
+\textcolor{technologycolor}{\textit{\small{\textbf{Microservices, Quarkus, Eclipse MicroProfile, Kotlin, REST, Apiary.}}}}}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CGI
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsectiontitle{\weblink[\underline{Facilit\'e - CGI}]{https://www.cgi.com/}}{
 	#if ($french == true)
-		(f\'ev. 2017 - auj.)
+		(f\'ev. 2017 - jan. 2019)
 	#end
 	#if ($english == true)
-		(feb 2017 - now)
+		(feb 2017 - jan. 2019)
 	#end
 }
 
 % BNC
 #if ($french == true)
-	\cventry{F\'ev. 2017 - auj.}{Full stack software engineer}{}{}{Banque Nationale du Canada}{D\'eveloppement de microservices Spring boot. D\'eveloppement de queries GraphQL.\newline{}D\'eveloppement React. Tooling Mountebank.\newline{}
+	\cventry{F\'ev. 2017 - jan. 2019}{Full stack software engineer}{}{}{Banque Nationale du Canada}{D\'eveloppement de microservices Spring boot.\newline{}Tooling Mountebank.\newline{}
 #end
 #if ($french == true && $english == true)}#end
 #if ($english == true)
-	\cventry{Feb 2017 - now}{Full stack software engineer}{}{}{National Bank of Canada}{Development of Spring boot based microservices. Development of GraphQL queries.\newline{}Development React. Tooling Mountebank.\newline{}
+	\cventry{Feb 2017 - jan 2019}{Full stack software engineer}{}{}{National Bank of Canada}{Development of Spring boot based microservices.\newline{}Tooling Mountebank.\newline{}
 #end
 \textcolor{technologycolor}{\textit{\small{\textbf{Microservices, REST, Spring boot, Openshift, MongoDB, NodeJS, ExpressJS, Mountebank, GraphQL, Swagger, Docker, ReactJS, Redux.}}}}}
 
@@ -469,8 +511,8 @@
 #if ($english == true)
 	\section{Technologies}
 #end
-\cvcomputer{#if ($french == true)Langages#end#if ($english == true)Languages#end}{\textbf{Java}, \textbf{Javascript}, \textbf{Typescript}, Html, Css, SQL, Bash, Groovy, Python, Scala, C\#, PL/SQL, Ada, Latex}.
-\cvcomputer{#if ($french == true)Back-end#end#if ($english == true)Back-end#end}{\textbf{Spring}, \textbf{Spring boot}, \textbf{Node.js}, Grails, Play!, OSGi, J2EE, jHipster, \textbf{java} (Core, Logging, JPA, jOOQ, Args4j, etc..)}.
+\cvcomputer{#if ($french == true)Langages#end#if ($english == true)Languages#end}{\textbf{Java}, \textbf{Kotlin}, \textbf{Javascript}, \textbf{Typescript}, Html, Css, SQL, Bash, Groovy, Python, Scala, C\#, PL/SQL, Ada, Latex}.
+\cvcomputer{#if ($french == true)Back-end#end#if ($english == true)Back-end#end}{\textbf{Spring boot}, \textbf{Quarkus}, \textbf{Node.js}, \textbf{Eclipse Microprofile}, Grails, Play!, OSGi, J2EE, jHipster, \textbf{java} (Core, Logging, JPA, jOOQ, Args4j, etc..)}.
 \cvcomputer{#if ($french == true)Front-end#end#if ($english == true)Front-end#end}{\textbf{Vue.js}, \textbf{ReactJS}, \textbf{Redux}, AngularJS, Meteor, GWT,  Struts 2, Spring MVC, JQuery, \textbf{Android}}.
 \cvcomputer{#if ($french == true)Base de donn\'ees#end#if ($english == true)Databases#end}{\textbf{PostgreSQL}, Mysql, \textbf{MongoDB}, Oracle database 11, IBM DB2v9, Microsoft SQL Server, Apache Derby, CouchDB}.
 \cvcomputer{#if ($french == true)UI#end#if ($english == true)UI#end}{\textbf{Bootstrap}, \textbf{Foundation}, \textbf{Material design}, Kendo UI, \textbf{Responsive design}, \textbf{Sass}}.
@@ -506,7 +548,8 @@
 #end
 
 #if ($french == true)
-	\section{Certifications}
+	\section{Formations \& certifications}
+	\cventry{2020}{\textbf{KubeCon CloudNativeCon}}{}{}{}{}
 	\cventry{2017}{\textbf{Convolutional neural networks}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/XR7PHXYF624W}}{}{}
 	\cventry{2017}{\textbf{Structuring Machine Learning Projects}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/Z7WEH5H954QF}}{}{}
 	\cventry{2017}{\textbf{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/9ULM3VAV24VQ}}{}{}
@@ -521,7 +564,8 @@
 	\cventry{2010 - 2016}{\textbf{Yajug}}{}{\weblink[\underline{www.yajug.org}]{http://www.yajug.org}}{}{}  % arguments 3 to 6 are optional
 #end
 #if ($english == true)
-	\section{Certifications}
+	\section{Trainings \& certifications}
+	\cventry{2020}{\textbf{KubeCon CloudNativeCon}}{}{}{}{}
 	\cventry{2017}{\textbf{Structuring Machine Learning Projects}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/Z7WEH5H954QF}}{}{}
 	\cventry{2017}{\textbf{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/9ULM3VAV24VQ}}{}{}
 	\cventry{2017}{\textbf{Neural Networks and Deep Learning}}{Coursera, deeplearning.ai, by Andrew Ng}{\weblink[\underline{Certificate}]{https://www.coursera.org/account/accomplishments/verify/LPU46XAGWKTG}}{}{}
@@ -539,49 +583,50 @@
 	\section{R\'ealisations personnelles}
 	\cvline{}{\weblink[\underline{https://bitbucket.org/alexis\_paris}]{https://bitbucket.org/alexis_paris}
 	    }.\newline{}
-	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2018)}}{Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. Accessible sur \weblink[\underline{linkguardian.io}]{https://www.linkguardian.io}\newline{}
+	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2018)}}{Application web permettant la \textbf{gestion online de bookmarks} et le \textbf{partage facilit\'e de liens sur Twitter}. 
 		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}}
 	%\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
 	%    \textbf{Google Calendar Extended Tools} : outils "client side" pour la gestion d'agendas Google Calendar. \newline{}
 	%	\textcolor{technologycolor}{\textit{\small{HTML5, CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
-	#if ($anonymous == false)\cvline{Site web}{\textbf{}\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
+	#if ($anonymous == false)\cvline{Site web}{
 		\textcolor{technologycolor}{\textit{\small{HTML5, Javascript, CSS3, JQuery, Knockout}}}}.#end
-	\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://blackdog.blackdog-project.org}]{http://blackdog.blackdog-project.org/fr} :#end
+	\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{
 	    Lecteur gestionnaire audio modulaire open source.\newline{}
 		\textcolor{technologycolor}{\textit{\small{Java 6, Hibernate, Swing, SwingX, JUnit, Subversion, Log4j, Maven 2, SVN}}.}}
 	    %\htmladdnormallink{http://www.blackdog-project.org/fr}{http://www.blackdog-project.org/fr}).}
-	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://awl.blackdog-project.org}]{http://awl.blackdog-project.org/fr} :#end
+	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{
 	    API Java open source pour la cr\'eation d'assistants graphiques (wizards) en Swing}.
 #end
 #if ($english == true)
 	\section{Personal projects}
 	\cvline{}{\weblink[\underline{https://bitbucket.org/alexis\_paris}]{https://bitbucket.org/alexis_paris}
 	    }.\newline{}
-	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{Manage bookmarks} and share links on twitter}. Hosted on \weblink[\underline{linkguardian.io}]{https://www.linkguardian.io}\newline{}
+	\cvline{Linkguardian \tiny \textcolor{projectyearcolor}{(2016)}}{\textbf{Manage bookmarks} and share links on twitter}. 
 		\textcolor{technologycolor}{\textit{\small{AngularJS, Jhipster, material design, Bootstrap, Spring (batch, data), Google cloud function, liquibase, Nginx, DevOps, nightwatch, CSS3, PostgreSQL, Git, VPS}}.}
 	%\cvline{G7 \tiny \textcolor{projectyearcolor}{(2012)}}{#if ($anonymous == false)\weblink[\underline{www.blackdog-project.org/g7}]{http://www.blackdog-project.org/g7/index.html} :#end
 	%    \textbf{Google Calendar Extended Tools} : web application providing additional tools to your google's calendars.\newline{}
 	%	\textcolor{technologycolor}{\textit{\small{HTML5 (local storage), CSS3, JQuery, JQueryUI, Google Javascript APIs, Kendo UI, 960 grid, OAuth, Git}}.}}
-	#if ($anonymous == false)\cvline{Personal website}{\textbf{}
-		\weblink[\underline{www.blackdog-project.org}]{http://www.blackdog-project.org}.\newline{}
+	#if ($anonymous == false)\cvline{Personal website}{
 		\textcolor{technologycolor}{\textit{\small{HTML5, Javascript, CSS3, JQuery, Knockout}}}}.#end
-	\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://blackdog.blackdog-project.org}]{http://blackdog.blackdog-project.org} :#end
+	\cvline{Blackdog \tiny \textcolor{projectyearcolor}{(2008)}}{
 	    Open source lightweight iTunes-like software.\newline{}
 		\textcolor{technologycolor}{\textit{\small{Java 6, Hibernate, Swing, SwingX, JUnit, Subversion, Log4j, Maven 2, SVN}}.}}
 	    %\htmladdnormallink{http://www.blackdog-project.org/fr}{http://www.blackdog-project.org/fr}).}
-	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{#if ($anonymous == false)\weblink[\underline{http://awl.blackdog-project.org}]{http://awl.blackdog-project.org} :#end
+	\cvline{Awl \tiny \textcolor{projectyearcolor}{(2008)}}{
 	    Open source Java API for the creation of graphical wizards in Swing}.
 #end
 
 #if ($french == true)
 	\section{Centres d'int\'er\^et}
 	\cvline{}{Sport}
+	\cvline{}{Bricolage}
 	% , bricolage.}
 #end
 #if ($english == true)
 	\section{Hobbies}
 	\cvline{}{Sport}
-	%, do-it-yourself.}
+	\cvline{}{do-it-yourself}
+	%, .}
 #end
 
 \end{document}
