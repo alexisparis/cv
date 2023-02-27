@@ -19,7 +19,7 @@ generate () {
 }
 
 # debug and all to check content concordance
-generate "CV_Alexis_Paris_debug" "{french:true,english:true,qc:false,photo:false,anonymous:false,age:true,debug:true}"
+generate "CV_Alexis_Paris_debug" "{french:true,english:true,qc:true,photo:true,anonymous:false,age:true,debug:true}"
 
 #classic ones
 generate "CV_Alexis_Paris_FR"    "{french:true,english:false,qc:false,photo:true,anonymous:false,age:true,debug:false}"
@@ -29,7 +29,7 @@ generate "CV_AP_EN"              "{french:false,english:true,qc:false,photo:fals
 generate "CV_Alexis_Paris_CA_EN" "{french:false,english:true,qc:true,photo:false,anonymous:false,age:false,debug:false}"
 generate "CV_Alexis_Paris_CA_FR" "{french:true,english:false,qc:true,photo:false,anonymous:false,age:false,debug:false}"
 
-rm *.aux
-rm *.out
-rm *.log
-rm velocity.log*
+rm -f *.aux
+rm -f *.out
+rm -f *.log
+rm -f velocity.log*
